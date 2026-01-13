@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hailey Brown | Portfolio</title>
+  <meta name="description" content="Computer Science & Mathematics | Quantitative Modeling | Machine Learning" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121826;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #3b82f6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #0b0f14 0%, #0e1422 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin: 0 0 0.5rem 0;
+      letter-spacing: -0.02em;
+    }
+    .hero p { color: var(--muted); margin: 0; }
+    nav a { margin-left: 1rem; font-weight: 500; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .card {
+      background: radial-gradient(1200px 300px at 10% -20%, #1b2340 0%, var(--card) 40%);
+      border: 1px solid #1f2937;
+      border-radius: 1rem;
+      padding: 1.25rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    .card h3 { margin-top: 0; }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: #0b1220;
+      border: 1px solid #1f2937;
+      color: var(--muted);
+      font-size: 0.75rem;
+      margin-right: 0.25rem;
+    }
+    section { margin-bottom: 3rem; }
+    footer { color: var(--muted); text-align: center; }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 0.9rem;
+      border-radius: 0.75rem;
+      background: linear-gradient(180deg, #2563eb, #1d4ed8);
+      color: white;
+      font-weight: 600;
+      border: 1px solid #1d4ed8;
+      box-shadow: 0 10px 20px rgba(29,78,216,0.35);
+    }
+    .btn.secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid #1f2937;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <h1>Hailey Brown</h1>
+        <p>Computer Science & Mathematics • Quantitative Modeling • Machine Learning</p>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <div class="card">
+        <h3>About</h3>
+        <p>
+          I’m a CS & Math student with a focus on quantitative modeling, machine learning, and systems-level engineering.
+          My work centers on extracting signal from noisy data, building performant pipelines, and translating theory into production-ready code.
+        </p>
+        <p>
+          <span class="badge">Python</span>
+          <span class="badge">C++</span>
+          <span class="badge">ML</span>
+          <span class="badge">Data</span>
+          <span class="badge">Quant</span>
+        </p>
+        <p>
+          <a class="btn" href="https://github.com/USERNAME" target="_blank">GitHub</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/USERNAME" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Lightning / Thunder Prediction Model</h3>
+          <p>
+            Built a probabilistic classification pipeline using real weather and lightning data to estimate thunder risk over time.
+            Focused on feature engineering, threshold tuning, and interpretability.
+          </p>
+          <p>
+            <span class="badge">Python</span>
+            <span class="badge">scikit-learn</span>
+            <span class="badge">Time Series</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>PCA + SVR Market Prediction</h3>
+          <p>
+            Implemented dimensionality reduction and regression models to study factor structure and predictive performance on historical market data.
+          </p>
+          <p>
+            <span class="badge">PCA</span>
+            <span class="badge">SVR</span>
+            <span class="badge">Quant Finance</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>High-Performance Job System (C++)</h3>
+          <p>
+            Designed a multi-threaded job system with work-stealing queues, RAII-based memory management, and performance instrumentation.
+          </p>
+          <p>
+            <span class="badge">C++</span>
+            <span class="badge">Concurrency</span>
+            <span class="badge">Systems</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>U.S. Marine Corps</h3>
+          <p>
+            Former infantry Marine with experience in high-pressure decision making, team leadership, and disciplined execution.
+          </p>
+          <p><span class="badge">Leadership</span><span class="badge">Operations</span></p>
+        </div>
+        <div class="card">
+          <h3>Academic & Research Projects</h3>
+          <p>
+            Extensive coursework and independent projects in algorithms, discrete math, probability, machine learning, and data-driven modeling.
+          </p>
+          <p><span class="badge">Algorithms</span><span class="badge">ML</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>
+          Open to internships and project-based opportunities in quantitative finance, data science, and software engineering.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Hailey Brown</p>
+    </footer>
+  </div>
+</body>
+</html>
